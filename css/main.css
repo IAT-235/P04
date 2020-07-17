@@ -1,0 +1,243 @@
+*, *::after, *::before{
+	box-sizing: border-box; 
+}
+
+.header{
+	display: inline-block;
+	font-weight: bold;
+}
+
+body {
+	font-family: Arial;
+	font-size: 1em; 
+	color: black;
+	margin: 0;
+}
+
+
+/*refered from Paul week08-complete file */
+.nav-main-item{
+	display: inline-block;
+	color: white;
+	font-size: 1.25rem;
+	padding: 0.25rem 2.5rem;
+	margin-right: 2rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+nav a.donate-button{
+	background-color: #D42E47;
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+.news{
+	position: relative;
+	bottom: 4rem;
+	color: white;
+	font-size: 60px;
+	display: flex;
+}
+
+.header{
+	position: relative;
+	display: flex;
+	background-image: url("../img/headerphoto.jpg");
+	background-size: cover;
+	height: 40vh;
+}
+
+.header-filter{
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	height: 100%;
+	width: 100%;
+}
+
+
+.footer-box{
+	font-family: Arial;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+ .footer-logo{
+
+ 	height: auto;
+} 
+
+.foot-nav{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.footer-title{
+	margin-top:0rem;
+	margin-bottom: 1rem;
+	font-size: 23px;
+}
+
+.left-footer{
+	font-family: Arial;
+	font-weight: bold;
+	padding-right: 5rem;
+	position: relative;
+}
+
+.mid-footer{
+	padding-right: 5rem;
+	position: relative;
+	/*bottom: 24rem; */
+	color:white;
+}
+
+.foot-mid{
+	text-decoration: none;
+	color:white;
+	font-size: 13px;
+}
+
+.right-footer{
+	font-family: Arial;
+	font
+	margin-right: 2rem;
+	padding-right: 5rem;
+	position: relative;
+	color:white;
+}
+
+.em-contact{
+	color: #D42E47;
+}
+
+.follow-us{
+	padding-top: 1rem;
+}
+
+
+
+/*refered from Paul week08-complete file */
+nav a:hover, nav a:active {
+	color: #D42E47;
+}
+
+nav a.donate-button:hover, nav a.donate-button:active {
+	color: #393939;
+}
+
+
+/*refered from Paul week08-complete file */
+a:active, a:hover {
+	color: #888888; 
+	text-decoration: none;
+}
+
+/*refered from Paul week08-complete file */
+img {
+	height: auto; 
+	width: auto;
+	max-width: 100%; 
+}
+
+
+h1 {
+	font-weight: bold;
+	font-size: 55px; 
+}
+
+p {
+	font-size: 20px; 
+}
+
+.footer-des{
+	text-decoration: none;
+	color: white;
+	font-size:13px;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 27px; 
+}
+
+h3 {
+	font-size: 33px; 
+}
+
+h4 {
+	font-size: 30px; 
+}
+
+.nav-main {
+}
+
+.top-logo {
+	height: auto;
+}
+
+/* With Moh's help */
+.nav-container {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.logo-container {
+	flex: 2;
+	min-width: 20%;
+}
+
+.ham-menu {
+	position: relative;
+	bottom: 3.5rem;
+	width: 2rem;
+	height: 2rem;
+	background-color: white;
+	display: none;
+}
+
+#banner-img {
+	width: 100%;
+	height: 100%;
+	/* min-height: 500px; */
+	max-width: unset;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	/* position: absolute; */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.stay-left {
+	flex: 1;
+}
+
+.down-container {
+	margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+	.ham-menu {
+		display: block;
+	}
+
+	.box.nav-main {
+		display: none;
+	}
+	.mid-footer, .right-footer{
+		padding-top: 2rem;
+	}
+}

@@ -1,0 +1,92 @@
+/*refered from Paul week08-complete file */
+*, *::after, *::before{
+	box-sizing: border-box; 
+} 
+
+/*refered from Paul week08-complete file */
+.box{
+	display:flex;
+	/* prevents vertical scroll */
+	flex-wrap: wrap;
+	/* spacing between elements */
+	justify-content: space-around;
+}
+
+/*refered from Paul week08-complete file */
+.box-item-nav{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.box image{
+	display:flex;
+	/* prevents vertical scroll */
+	flex-wrap: wrap;
+	/* spacing between elements */
+}
+
+.footer{
+	background-color: #393939;
+	position: relative;
+	padding: 2rem;
+}
+
+.footer-box{
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width:100%;
+}
+
+.left-footer{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.mid-footer{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.right-footer{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column-foot{
+	display:flex;
+}
+
+
+/*refered from Paul week08-complete file */
+@media(max-width: 40em){
+	.box image{
+		flex-basis: 100%;
+	}
+}
+
+@media(max-width: 660px){
+	.footer-box, .footer{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+}
+@media(max-width: 600px){
+	.nav-main{
+		display: none;
+	}
+}
+
+@media(max-width: 600px){
+	.post-article{
+		flex-direction: column;
+	}
+}
+
